@@ -1,0 +1,11 @@
+---
+# tasks file for reddy
+ - name: install git
+   ansible.builtin.yum:
+     name: httpd
+     state: present 
+
+ - name: start apche
+   ansible.builtin.sevice:
+     name: httpd
+     state: started
